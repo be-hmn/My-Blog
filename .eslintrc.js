@@ -34,6 +34,7 @@ module.exports = {
       custom: 'ignore',
     }],
     'react/prop-types': [0],
-    'import/no-unresolved': 'off'
+    'import/no-unresolved': 'off',
+    '@next/next/no-img-element': 'off',
   },
 };

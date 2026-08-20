@@ -18,12 +18,19 @@ const notoSerifKr = NotoSerifKR({
 });
 
 export const metadata = {
-  metadatBase: new URL('https://computudy-note.vercel.app'),
+  metadataBase: new URL('https://computudy-note.vercel.app'),
   title: {
     default: 'COMPUTUDY NOTE',
     template: '%s | COMPUTUDY NOTE',
   },
   description: '개인 학습 노트',
+  openGraph: {
+    title: 'COMPUTUDY NOTE',
+    description: '개인 학습 노트',
+    type: 'website',
+    locale: 'ko_KR',
+    siteName: 'COMPUTUDY NOTE',
+  },
   verification: {
     other: {
       'google-site-verification': 'd6NqV68WVvXhJlU0h2Gh7LCUwicdl0An9s--sfGmJik',
