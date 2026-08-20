@@ -2,6 +2,7 @@ import '../styles/globals.css';
 // eslint-disable-next-line camelcase
 import { Noto_Sans_KR as NotoSansKR, Noto_Serif_KR as NotoSerifKR } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
+import Script from 'next/script';
 import Providers from '../components/providers';
 
 const notoSansKr = NotoSansKR({
@@ -17,8 +18,17 @@ const notoSerifKr = NotoSerifKR({
 });
 
 export const metadata = {
-  title: '학습노트',
-  description: '학습 내용 기록 및 실습 노트',
+  metadatBase: new URL('https://computudy-note.vercel.app'),
+  title: {
+    default: 'COMPUTUDY NOTE',
+    template: '%s | COMPUTUDY NOTE',
+  },
+  description: '개인 학습 노트',
+  verification: {
+    other: {
+      'naver-site-verification': '9d57ce4eda1cbe652fd7cb9617e6035dd82b0d61',
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -27,6 +37,18 @@ export default function RootLayout({ children }) {
       <body className={`${notoSansKr.variable} ${notoSerifKr.variable} ${notoSansKr.className}`}>
         <Providers>{children}</Providers>
         <Analytics />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
