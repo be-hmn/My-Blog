@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import Link from 'next/link';
 import { getPageBySlugAnyType, getBlocks } from '../../lib/notion';
 import { renderBlock } from '../../components/notion/renderer';
 import Text from '../../components/text';
@@ -13,6 +14,9 @@ export default async function About() {
 
   return (
     <article className={styles.container}>
+      <Link href="/" className={styles.back}>
+        ← 홈으로
+      </Link>
       <h1 className={styles.name}>
         <Text title={page.properties.title?.title} />
       </h1>

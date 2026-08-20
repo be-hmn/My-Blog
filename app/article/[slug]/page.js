@@ -41,7 +41,7 @@ export default async function Page({ params }) {
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))}
           <Link href="/" className={styles.back}>
-            ← Go home
+            ← 홈으로
           </Link>
         </section>
       </article>

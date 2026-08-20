@@ -1,8 +1,19 @@
 import '../styles/globals.css';
-import { Inter } from 'next/font/google';
+// eslint-disable-next-line camelcase
+import { Noto_Sans_KR as NotoSansKR, Noto_Serif_KR as NotoSerifKR } from 'next/font/google';
 import Providers from '../components/providers';
 
-const inter = Inter({ subsets: ['latin'] });
+const notoSansKr = NotoSansKR({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-sans',
+});
+
+const notoSerifKr = NotoSerifKR({
+  subsets: ['latin'],
+  weight: ['600', '700'],
+  variable: '--font-serif',
+});
 
 export const metadata = {
   title: '학습노트',
@@ -12,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${notoSansKr.variable} ${notoSerifKr.variable} ${notoSansKr.className}`}>
         <Providers>{children}</Providers>
       </body>
     </html>

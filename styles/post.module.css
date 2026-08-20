@@ -27,8 +27,10 @@
 
 .name {
   font-size: 36px;
-  font-family: Georgia, 'Noto Serif KR', serif;
+  font-family: var(--font-serif), 'Noto Serif KR', serif;
   font-weight: 700;
+  line-height: 1.4;
+  word-break: keep-all;
 }
 
 .back {
