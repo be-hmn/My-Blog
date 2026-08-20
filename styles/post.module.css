@@ -126,6 +126,10 @@
   flex: 1;
 }
 
+.nested {
+  margin-left: 1.5rem;
+}
+
 .childPage {
   border: 1px solid var(--border);
   padding: 20px;

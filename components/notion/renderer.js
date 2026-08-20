@@ -11,9 +11,18 @@ export function renderBlock(block) {
   switch (type) {
     case 'paragraph':
       return (
-        <p>
-          <Text title={value.rich_text} />
-        </p>
+        <>
+          <p>
+            <Text title={value.rich_text} />
+          </p>
+          {block.children?.length > 0 && (
+            <div className={styles.nested}>
+              {block.children.map((child) => (
+                <Fragment key={child.id}>{renderBlock(child)}</Fragment>
+              ))}
+            </div>
+          )}
+        </>
       );
     case 'heading_1':
       return (
