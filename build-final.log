@@ -1,0 +1,146 @@
+
+> nextjs-notion-blog@0.1.1 build
+> next build
+
+- info Loaded env from /home/b3-hum4n/notion-blog-new/.env.local
+- info Creating an optimized production build...
+- info Compiled successfully
+- info Linting and checking validity of types...
+
+./components/notion/renderer.js
+84:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+- info Collecting page data...
+- info Generating static pages (0/43)
+TypeError: Cannot read properties of undefined (reading 'plain_text')
+    at renderBlock (/home/b3-hum4n/notion-blog-new/.next/server/chunks/726.js:143:46)
+    at /home/b3-hum4n/notion-blog-new/.next/server/app/article/[slug]/page.js:378:128
+    at Array.map (<anonymous>)
+    at Page (/home/b3-hum4n/notion-blog-new/.next/server/app/article/[slug]/page.js:377:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Error occurred prerendering page "/article/pentest-basic-3". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'plain_text')
+    at renderBlock (/home/b3-hum4n/notion-blog-new/.next/server/chunks/726.js:143:46)
+    at /home/b3-hum4n/notion-blog-new/.next/server/app/article/[slug]/page.js:378:128
+    at Array.map (<anonymous>)
+    at Page (/home/b3-hum4n/notion-blog-new/.next/server/app/article/[slug]/page.js:377:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+- info Generating static pages (10/43)
+TypeError: Cannot read properties of undefined (reading 'link')
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:164:28
+    at Array.map (<anonymous>)
+    at Text (/home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:151:18)
+    at S (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10094:13)
+    at eb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10209:21)
+    at Object.toJSON (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10013:20)
+    at stringify (<anonymous>)
+    at pb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10420:9)
+    at mb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10319:29)
+    at Timeout._onTimeout (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10144:16)
+
+Error occurred prerendering page "/article/init-access-2". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'link')
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:164:28
+    at Array.map (<anonymous>)
+    at Text (/home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:151:18)
+    at S (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10094:13)
+    at eb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10209:21)
+    at Object.toJSON (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10013:20)
+    at stringify (<anonymous>)
+    at pb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10420:9)
+    at mb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10319:29)
+    at Timeout._onTimeout (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10144:16)
+- info Generating static pages (21/43)
+TypeError: Cannot read properties of undefined (reading 'replaceAll')
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:266:29
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:11041:23
+    at Page (/home/b3-hum4n/notion-blog-new/.next/server/app/article/[slug]/page.js:349:90)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Error occurred prerendering page "/article/what-is-att&ck". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'replaceAll')
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:266:29
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:11041:23
+    at Page (/home/b3-hum4n/notion-blog-new/.next/server/app/article/[slug]/page.js:349:90)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'link')
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:164:28
+    at Array.map (<anonymous>)
+    at Text (/home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:151:18)
+    at S (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10094:13)
+    at eb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10209:21)
+    at Object.toJSON (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10013:20)
+    at stringify (<anonymous>)
+    at pb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10420:9)
+    at mb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10319:29)
+    at Timeout._onTimeout (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10144:16)
+
+Error occurred prerendering page "/article/what-is-command-injection". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'link')
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:164:28
+    at Array.map (<anonymous>)
+    at Text (/home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:151:18)
+    at S (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10094:13)
+    at eb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10209:21)
+    at Object.toJSON (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10013:20)
+    at stringify (<anonymous>)
+    at pb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10420:9)
+    at mb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10319:29)
+    at Timeout._onTimeout (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10144:16)
+TypeError: Cannot read properties of undefined (reading 'link')
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:164:28
+    at Array.map (<anonymous>)
+    at Text (/home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:151:18)
+    at S (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10094:13)
+    at eb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10209:21)
+    at Object.toJSON (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10013:20)
+    at stringify (<anonymous>)
+    at pb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10420:9)
+    at mb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10319:29)
+    at Timeout._onTimeout (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10144:16)
+TypeError: Cannot read properties of undefined (reading 'link')
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:164:28
+    at Array.map (<anonymous>)
+    at Text (/home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:151:18)
+    at S (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10094:13)
+    at eb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10209:21)
+    at Object.toJSON (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10013:20)
+    at stringify (<anonymous>)
+    at pb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10420:9)
+    at mb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10319:29)
+    at Timeout._onTimeout (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10144:16)
+TypeError: Cannot read properties of undefined (reading 'link')
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:164:28
+    at Array.map (<anonymous>)
+    at Text (/home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:151:18)
+    at S (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10094:13)
+    at eb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10209:21)
+    at Object.toJSON (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10013:20)
+    at stringify (<anonymous>)
+    at pb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10420:9)
+    at mb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10319:29)
+    at Timeout._onTimeout (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10144:16)
+
+Error occurred prerendering page "/article/dalgona-bof-foundation". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'link')
+    at /home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:164:28
+    at Array.map (<anonymous>)
+    at Text (/home/b3-hum4n/notion-blog-new/.next/server/chunks/302.js:151:18)
+    at S (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10094:13)
+    at eb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10209:21)
+    at Object.toJSON (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10013:20)
+    at stringify (<anonymous>)
+    at pb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10420:9)
+    at mb (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10319:29)
+    at Timeout._onTimeout (/home/b3-hum4n/notion-blog-new/.next/server/chunks/827.js:10144:16)
+- info Generating static pages (32/43)
+- info Generating static pages (43/43)
+
+> Export encountered errors on following paths:
+	/article/[slug]/page: /article/dalgona-bof-foundation
+	/article/[slug]/page: /article/init-access-2
+	/article/[slug]/page: /article/pentest-basic-3
+	/article/[slug]/page: /article/what-is-att&ck
+	/article/[slug]/page: /article/what-is-command-injection
