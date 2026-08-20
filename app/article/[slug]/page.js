@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import {
-  getDatabase, getBlocks, getPageFromSlug,
+  getBlocks, getPageFromSlug,
 } from '../../../lib/notion';
 import Text from '../../../components/text';
 import { renderBlock } from '../../../components/notion/renderer';

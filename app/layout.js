@@ -1,9 +1,8 @@
 import '../styles/globals.css';
 // eslint-disable-next-line camelcase
 import { Noto_Sans_KR as NotoSansKR, Noto_Serif_KR as NotoSerifKR } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import Providers from '../components/providers';
-
-import { Analytics } from '@vercel/analytics/react';
 
 const notoSansKr = NotoSansKR({
   subsets: ['latin'],
@@ -27,6 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="ko" suppressHydrationWarning>
       <body className={`${notoSansKr.variable} ${notoSerifKr.variable} ${notoSansKr.className}`}>
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
