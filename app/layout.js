@@ -3,6 +3,8 @@ import '../styles/globals.css';
 import { Noto_Sans_KR as NotoSansKR, Noto_Serif_KR as NotoSerifKR } from 'next/font/google';
 import Providers from '../components/providers';
 
+import { Analytics } from '@vercel/analytics/react';
+
 const notoSansKr = NotoSansKR({
   subsets: ['latin'],
   weight: ['400', '500', '700'],

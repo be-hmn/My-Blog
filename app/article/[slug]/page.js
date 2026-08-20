@@ -11,10 +11,7 @@ import styles from '../../../styles/post.module.css';
 
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
-  const database = await getDatabase();
-  return database.map((page) => ({
-    slug: page.properties.slug?.rich_text?.[0]?.plain_text,
-  }));
+  return [];
 }
 
 export default async function Page({ params }) {
