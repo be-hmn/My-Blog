@@ -1,5 +1,3 @@
-// components/post-list.js
-
 'use client';
 
 import { useMemo, useState } from 'react';
@@ -33,47 +31,43 @@ export default function PostList({ posts }) {
 
   return (
     <>
-      <div style={{
-        display: 'flex', gap: 8, flexWrap: 'wrap', margin: '1rem 0',
-      }}
-      >
+      <div className={styles.controls}>
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="제목·요약 검색"
-          style={{ padding: '6px 10px', flex: 1, minWidth: 180 }}
+          className={styles.search}
         />
-        <button type="button" onClick={() => setOrder(order === 'desc' ? 'asc' : 'desc')}>
+        <button
+          type="button"
+          className={styles.sortButton}
+          onClick={() => setOrder(order === 'desc' ? 'asc' : 'desc')}
+        >
           {order === 'desc' ? '최신순 ↓' : '오래된순 ↑'}
         </button>
       </div>
 
-      <div style={{
-        display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: '1.5rem',
-      }}
-      >
+      <div className={styles.tags}>
         <button
           type="button"
           onClick={() => setActiveTag(null)}
-          style={{ fontWeight: activeTag ? 400 : 700 }}
+          className={[styles.tag, activeTag ? '' : styles.tagActive].join(' ')}
         >
-          {`전체 (${posts.length})`}
+          {`전체 ${posts.length}`}
         </button>
         {allTags.map(([tag, count]) => (
           <button
             type="button"
             key={tag}
             onClick={() => setActiveTag(tag === activeTag ? null : tag)}
-            style={{ fontWeight: tag === activeTag ? 700 : 400 }}
+            className={[styles.tag, tag === activeTag ? styles.tagActive : ''].join(' ')}
           >
-            {`${tag} (${count})`}
+            {`${tag} ${count}`}
           </button>
         ))}
       </div>
 
-      <p style={{ color: 'var(--muted)', fontSize: 14 }}>
-        {`${visible.length}개의 글`}
-      </p>
+      <p className={styles.count}>{`${visible.length}개의 글`}</p>
 
       <ol className={styles.posts}>
         {visible.map((post) => (
@@ -82,7 +76,7 @@ export default function PostList({ posts }) {
               <Link href={`/article/${post.slug}`}>{post.title}</Link>
             </h3>
             {post.summary && <p className={styles.postDescription}>{post.summary}</p>}
-            <p style={{ color: 'var(--muted)', fontSize: 13 }}>
+            <p className={styles.postMeta}>
               {new Date(post.date).toLocaleDateString('ko-KR')}
               {post.tags.length > 0 && ` · ${post.tags.join(', ')}`}
             </p>

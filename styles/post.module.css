@@ -1,13 +1,14 @@
 .container {
-  padding: 0 20px;
+  padding: 0 24px;
   max-width: 700px;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 1.7;
   white-space: pre-line;
 }
 
 .container h1 {
   font-size: 32px;
+  margin-bottom: 8px;
 }
 
 .container img {
@@ -26,11 +27,15 @@
 
 .name {
   font-size: 36px;
+  font-family: Georgia, 'Noto Serif KR', serif;
+  font-weight: 700;
 }
 
 .back {
   display: inline-block;
   margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .bold {
@@ -38,10 +43,11 @@
 }
 
 .code {
-  font-family: monospace;
-  background-color: rgb(242, 242, 242);
-  padding: 2px 4px;
-  border-radius: 2px;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background-color: var(--surface);
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
 .italic {
@@ -49,10 +55,10 @@
 }
 
 .pre {
-  background-color: rgb(242, 242, 242);
-  padding: 2px 4px;
-  margin: 20px 0;
-  line-height: 2.3;
+  background-color: var(--surface);
+  padding: 16px 20px;
+  margin: 24px 0;
+  line-height: 1.7;
   border-radius: 12px;
   overflow: auto;
 }
@@ -97,16 +103,16 @@
 }
 
 .table {
-  border: 1px solid currentColor;
+  border: 1px solid var(--border);
   border-collapse: collapse;
 }
 .table th {
-  border: 1px solid currentColor;
-  background-color: rgb(242, 242, 242);
+  border: 1px solid var(--border);
+  background-color: var(--surface);
   padding: 6px 12px;
 }
 .table td {
-  border: 1px solid currentColor;
+  border: 1px solid var(--border);
   padding: 6px 12px;
 }
 
@@ -119,17 +125,12 @@
 }
 
 .childPage {
-  border: 1px solid currentColor;
+  border: 1px solid var(--border);
   padding: 20px;
   border-radius: 12px;
 }
 
 @media (prefers-color-scheme: dark) {
-  .code,
-  .table,
-  .pre {
-    background-color: rgb(15, 8, 28);
-  }
   .file:hover {
     background: rgba(255, 255, 255, 0.1);
     cursor: pointer;

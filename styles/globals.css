@@ -6,43 +6,53 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-body {
-  background-color: white;
-  color: black;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: rgb(24, 24, 31);
-    color: rgb(238, 238, 238);
-  }
-}
-
-a {
-  color: #2563eb;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 }
 
 h1 {
-  font-weight: 800;
+  font-family: Georgia, 'Noto Serif KR', serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 :root {
-  --bg: #ffffff;
-  --fg: #111111;
-  --muted: #666666;
-  --border: #e5e5e5;
+  --bg: #fdfcfa;
+  --fg: #1a1a18;
+  --muted: #767671;
+  --border: #e8e6e0;
+  --accent: #b5502e;
+  --surface: #f5f3ee;
 }
 [data-theme='dark'] {
-  --bg: #191919;
-  --fg: #ededed;
-  --muted: #9b9b9b;
-  --border: #2f2f2f;
+  --bg: #16161a;
+  --fg: #ececea;
+  --muted: #97968f;
+  --border: #2c2c30;
+  --accent: #e5895f;
+  --surface: #1e1e22;
 }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #16161a;
+    --fg: #ececea;
+    --muted: #97968f;
+    --border: #2c2c30;
+    --accent: #e5895f;
+    --surface: #1e1e22;
+  }
+}
+
 body {
   background: var(--bg);
   color: var(--fg);
