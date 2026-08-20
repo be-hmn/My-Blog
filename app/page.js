@@ -23,12 +23,12 @@ export default async function Page() {
     <div>
       <main className={styles.container}>
         <header className={styles.header}>
-          <h1>학습일지</h1>
-          <p>정리된 학습 내용을 기록하는 블로그입니다.</p>
-          <nav style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <Link href="/about">About</Link>
+          <nav className={styles.nav}>
+            <Link href="/about" className={styles.navLink}>About</Link>
             <ThemeToggle />
           </nav>
+          <h1>학습일지</h1>
+          <p>정리된 학습 내용을 기록하는 블로그입니다.</p>
         </header>
 
         <PostList posts={posts} />

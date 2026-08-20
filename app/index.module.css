@@ -15,6 +15,30 @@
   padding-top: 8px;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.navLink {
+  padding: 8px 16px;
+  font-size: 13px;
+  color: var(--fg);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.navLink:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
 .header p {
   opacity: 0.7;
   line-height: 1.6;
