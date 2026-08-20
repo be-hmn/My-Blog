@@ -26,6 +26,7 @@ export const metadata = {
   description: '개인 학습 노트',
   verification: {
     other: {
+      'google-site-verification': 'd6NqV68WVvXhJlU0h2Gh7LCUwicdl0An9s--sfGmJik',
       'naver-site-verification': '9d57ce4eda1cbe652fd7cb9617e6035dd82b0d61',
     },
   },
